@@ -1,0 +1,6 @@
+a) Se debe configurar .htaccess para rutear todo lo que venga con api en la URL y mandar a un nuevo router-api. En el router copnfigurar las rutas para que vaya a un nuevo controlador api. Y ahi mismo configurar para que funcion con los portocolos REST. Ademas agregar una vista JSON.
+
+b) $router->addRoute("reseñas","GET","ApiController","GetReseñas");
+    $router->addRoute("reseñas/:ID","UPDATE","ApiController","EditarReseña");
+    $router->addRoute("reseñas","POST","ApiController","AgregarReseña");
+    $router->addRoute("reseñas/:ID","DELETE","ApiController","EliminarReseña");
